@@ -8,7 +8,7 @@ h1{
 hr{
     border-style: dotted; 
     width: 40%;
-    backg round-color: cornsilk;
+    background-color: cornsilk;
 }
 
 
@@ -18,18 +18,18 @@ li{
     display: block;
     font-style: italic;
     font-size: 16px;
+}
 h3{
     
     
-    text-shadow: 0px 3px 3px cadetblue; 
+    text-shadow: (0px ,3px ,3px) cadetblue; 
     font-size: 3vw;
     max-width: 100px;
-ol{
-    
 }
+
 p{
     font-size: 2vw;
 }
 table{
-    cellspacing="20";
+    border-spacing:"20";
 }
