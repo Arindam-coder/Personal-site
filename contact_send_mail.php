@@ -15,7 +15,7 @@ $userheaders = "From: majeearindam4@gmail.com\n";
 $usermessage = "Thank you for sending message.";
 mail($to,$subject,$emailmessage,$headers);
 mail($user,$usersubject,$usermessage,$userheaders);
-header("Location: index.html");
+header("Location: https://arindam-coder.github.io/Personal-site/index.html");
 exit();  
 
 ?>
