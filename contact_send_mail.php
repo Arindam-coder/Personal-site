@@ -1,4 +1,4 @@
-<?PHP
+<?php
 $name = $_POST['name'];
 $email = $_POST["emailaddress"];
 $message = $_POST['message'] ;
@@ -13,7 +13,8 @@ $user = "$email";
 $usersubject = "Thank You";
 $userheaders = "From: majeearindam4@gmail.com\n";
 $usermessage = "Thank you for sending message.";
-mail($to,$subject,$emailmessage,$headers);
+mail('majeearindam4@gmail.com',$subject,$emailmessage,$headers);
 mail($user,$usersubject,$usermessage,$userheaders);
-
+header("Location: index.html");
+exit();
 ?>
