@@ -1,6 +1,6 @@
-<?php /*
+<?php 
 $name = $_POST['name'];
-$email = $_POST["emailaddress"];
+$email = $_POST["email"];
 $message = $_POST['message'] ;
 $mobile = $_POST['mobile'] ;
 $to = "majeearindam4@gmail.com";
@@ -13,14 +13,14 @@ $user = "$email";
 $usersubject = "Thank You";
 $userheaders = "From: majeearindam4@gmail.com\n";
 $usermessage = "Thank you for sending message.";
-mail('majeearindam4@gmail.com',$subject,$emailmessage,$headers);
+mail($to,$subject,$emailmessage,$headers);
 mail($user,$usersubject,$usermessage,$userheaders);
 header("Location: index.html");
 exit();  
-*/
+
 ?>
 
-<?php
+<?php /*
 $errors = '';
 $myemail = 'majeearindam4@gmail.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
@@ -67,5 +67,5 @@ mail($to,$email_subject,$email_body,$headers);
 header('Location: contact-form-thank-you.html');
 
 }
-
+*/
  ?>
