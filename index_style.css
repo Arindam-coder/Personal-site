@@ -1,35 +1,115 @@
-h1{
+h1 {
     font-family: cursive;
     font-size: 5vw;
     color: aliceblue;
     letter-spacing: 0.1rem;
-    text-shadow: 0px 3px 3px cadetblue; 
+    text-shadow: 0px 3px 3px cadetblue;
 }
-hr{
-    border-style: dotted; 
+
+hr {
+    border-style: dotted;
     width: 40%;
     background-color: cornsilk;
 }
 
 
-li{
+li {
     float: none;
     padding: 13px 13px;
     display: block;
     font-style: italic;
     font-size: 16px;
 }
-h3{
-    
-    
-    text-shadow: (0px ,3px ,3px) cadetblue; 
+
+h3 {
+
+
+    text-shadow: (0px, 3px, 3px) cadetblue;
     font-size: 3vw;
     max-width: 100px;
 }
 
-p{
+
+.topnav li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    top: 20px;
+}
+
+.topnav li a {
+    margin: 1px 0px 0px -10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+p {
     font-size: 2vw;
 }
-table{
-    border-spacing:"20";
+
+table {
+    border-spacing: "20";
+}
+
+.topnav h1 {
+    display: none;
+}
+
+@media screen and (max-width:750px) {
+    .topnav li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .b-menu #line1,
+    .b-menu #line2,
+    .b-menu #line3 {
+        background-color: yellow;
+        height: 3px;
+        display: block;
+        margin: 5px;
+        left: 20px;
+        top: 35px;
+        width: 25px;
+        position: relative;
+        cursor: pointer;
+        z-index:1 ;
+    }
+
+    .close-btn {
+        position: absolute;
+        opacity: 0%;
+        transition: transform .8s ease-in;
+    }
+
+    .close-btn .line1,
+    .close-btn .line3 {
+        background-color: yellow;
+        height: 3px;
+        margin: -2px;
+        left: 30px;
+        top: 45px;
+        width: 25px;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        z-index:2 ;
+    }
+
+    .topnav {
+        height: 15vh;
+    }
+
+    .topnav h1 {
+        display: inherit;
+        margin: auto;
+        color: white;
+        text-shadow: none;
+        text-align: center;
+    }
+
+    span {
+        color: cornflowerblue;
+    }
 }
