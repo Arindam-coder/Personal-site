@@ -88,14 +88,25 @@ table {
         background-color: yellow;
         height: 3px;
         margin: -2px;
-        left: 30px;
-        top: 45px;
+        left: 26px;
+        top: 21px;
         width: 25px;
         display: block;
-        position: absolute;
+        position: relative;
         cursor: pointer;
         z-index:2 ;
     }
+    .close-btn .line1 
+{
+    transform:rotateZ(45deg);
+    animation: close1 .5s ease-in;
+}
+.close-btn .line3 
+{
+    transform:rotateZ(-45deg); 
+    animation: close2 .5s ease-in;
+}
+
 
     .topnav {
         height: 15vh;
