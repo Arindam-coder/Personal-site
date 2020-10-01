@@ -65,7 +65,7 @@ table {
     .b-menu #line1,
     .b-menu #line2,
     .b-menu #line3 {
-        background-color: yellow;
+        background-color: dodgerblue;
         height: 3px;
         display: block;
         margin: 5px;
@@ -74,7 +74,7 @@ table {
         width: 25px;
         position: relative;
         cursor: pointer;
-        z-index:1 ;
+        z-index: 1;
     }
 
     .close-btn {
@@ -85,7 +85,7 @@ table {
 
     .close-btn .line1,
     .close-btn .line3 {
-        background-color: yellow;
+        background-color: red;
         height: 3px;
         margin: -2px;
         left: 26px;
@@ -94,18 +94,18 @@ table {
         display: block;
         position: relative;
         cursor: pointer;
-        z-index:2 ;
+        z-index: 2;
     }
-    .close-btn .line1 
-{
-    transform:rotateZ(45deg);
-    animation: close1 .5s ease-in;
-}
-.close-btn .line3 
-{
-    transform:rotateZ(-45deg); 
-    animation: close2 .5s ease-in;
-}
+
+    .close-btn .line1 {
+        transform: rotateZ(45deg);
+        animation: close1 .5s ease-in;
+    }
+
+    .close-btn .line3 {
+        transform: rotateZ(-45deg);
+        animation: close2 .5s ease-in;
+    }
 
 
     .topnav {
